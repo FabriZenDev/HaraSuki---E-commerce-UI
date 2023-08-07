@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torca - Articulos para el hogar, Electrodomesticos, Tecnologia</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="https://kit.fontawesome.com/c2b641f912.js" crossorigin="anonymous"></script>
+</head>
+    <body id="top">
+
+        <header class="cabecera">
+            
+            <nav class="contenedor-navegacion">
+    
+                <a href="index.html"> <img class="logo-torca" src="img/logo.jpg"></a>
+    
+                <div class="contenedor-buscador">
+                    <form action="">
+                        <input type="text" placeholder="¿Qué estas buscando?" name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+    
+                <nav class="nav-usuarios">
+    
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a href="login.html">
+                            <i class="fas fa-user-alt"></i> 
+                            <span>Ingreso</span>
+                        </a>
+                    </li>
+                    
+                </nav>
+                
+            </nav>
+    
+            <nav class="nav-lista-categorias">
+
+                <ul class="lista-categorias">
+    
+                    <li><a href="#">Categorias</a>
+                        <ul class="submenu-categoria">
+                            <li><a href="#">Cocina</a></li>
+                            <li><a href="#">Oficina</a></li>
+                            <li><a href="#">Jardin</a></li>
+                            <li><a href="#">Dormitorios</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#">Tv, Audio y Vídeo </a>
+                        <ul class="submenu-categoria">
+                            <li><a href="#">Full HD</a></li>
+                            <li><a href="#">TV 4K</a></li>
+                            <li><a href="#">Smart TV</a></li>
+                            <li><a href="#">Audio - Video</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Celulares, Notebooks y Tecnologia</a>
+                        <ul class="submenu-categoria">
+                            <li><a href="#">Celulares</a></li>
+                            <li><a href="#">Notebooks</a></li>
+                            <li><a href="#">Informática</a></li>
+                            <li><a href="#">PC</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Electrodomésticos </a>
+                        <ul class="submenu-categoria">
+                            <li><a href="#">Climatizacion</a></li>
+                            <li><a href="#">Cocinas y Hornos</a></li>
+                            <li><a href="#">Freezer</a></li>
+                            <li><a href="#">Heladera</a></li>
+                            <li><a href="#">Lavarropa</a></li>
+                            <li><a href="#">Lavavajillas</a></li>
+                            <li><a href="#">Secaropa</a></li>
+                            <li><a href="#">Termotanque</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="categoria.html">Hogar, Muebles y Jardín </a>
+                        <ul class="submenu-categoria">
+                            <li><a href="#">Muebles</a></li>
+                            <li><a href="#">Colchones y Sommiers</a></li>
+                            <li><a href="#">Iluminación</a></li>
+                            <li><a href="#">Jardín</a></li>
+                            <li><a href="#">Decoración</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Salud, Belleza y Fitness </a>
+                        <ul class="submenu-categoria">
+                            <li><a href="#">Cuidado Personal</a></li>
+                            <li><a href="#">Salud Y Bienestar</a></li>
+                            <li><a href="#">Bicicletas</a></li>
+                            <li><a href="#">Belleza</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Bebes y niños </a></li>
+                </ul>
+
+            </nav>
+    
+        </header>
+        
+        <main class="contenedor">
+            
+            <div class="carrito-contenedor">
+                <div class="carrito-contenido">
+
+                    <h1 class="carrito-titulo">Mi carrito de compra</h1>
+
+                    <ol>
+                        <li class="carrito-li">
+                            <div class="carrito-item">
+                                
+                                <a href="compra.html">
+                                    <img src="img/producto3.jpg">
+                                </a>
+                                
+                                <a href="compra.html">
+                                    <span class="carrito-item-titulo">Sofa Color Living Milan</span>
+                                </a> 
+                                
+                                <div class="carrito-cantidad">
+                                    <i class="fas fa-minus"></i>
+                                    <span>1</span>
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                                
+                                <span class="carrito-item-precio">$100.000</span>
+                                
+                                <a href="#"><i class="fas fa-trash"></i></a>
+                            </div>
+                        </li>
+                    </ol>
+
+                </div>
+
+                <div class="carrito-pago">
+
+                    <h1 class="carrito-titulo">Resumen del pedido</h1>
+
+                    <div class="carrito-terminarcompra">
+                        <div class="carrito-total">
+                            <span>Total</span>
+                            <span>$100.000</span>
+                        </div>
+
+                        <div class="carrito-div-btns">
+                            <button>
+                                Finalizar Compra
+                            </button>
+
+                            <button>
+                                Seguir comprando
+                            </button>    
+                        </div>
+                    </div>
+                    
+                    <form class="carrito-cupon" style="margin-bottom: 5px;">
+                        <p>¿Tienes un cupón de descuento?</p>
+                        <div style="margin: 16px 0px 16px">
+                            <input type="text" placeholder="Ingrese el número del cupón">
+                            <button type="submit">Aplicar</button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="grid-footer contenedor">
+                
+                <div>
+                    <h3>Comprar en torca</h3>
+                    <nav class="footer-menu">
+                        <a href="#">Medios de pago</a>
+                        <a href="#">Información de envío</a>
+                        <a href="#">Políticas de Privacidad</a>
+                    </nav>
+                </div>
+
+                <div>
+                    <h3>Categorías</h3>
+
+                    <nav class="footer-menu">
+                        <a href="#">Cocina</a>
+                        <a href="#">Oficina</a>
+                        <a href="#">Jardín</a>
+                        <a href="#">Cochera</a>
+                        <a href="#">Dormitorios</a>
+                    </nav>
+                </div>
+
+                <div>
+                    <h3>Sobre Nosotros</h3>
+                    <nav class="footer-menu">
+                        <a href="#">Nuestra Historia</a>
+                        <a href="#">Misión, Visión y Valores</a>
+                        <a href="#">Carreras</a>
+                        <a href="#">Términos del Servicio</a>
+                    </nav>
+                </div>
+
+                <div>
+                    <h3>Soporte</h3>
+                    <nav class="footer-menu">
+                        <a href="#">Preguntas Frecuentes</a>
+                        <a href="#">Ayuda en línea</a>
+                        <a href="#">Confianza y Seguridad</a>
+                    </nav>
+                </div>
+
+            </div>
+
+            <p class="copyright contenedor">Torca 2019 © Tienda online es propiedad de Macer S.A - CUIT N° 3371076250/9 - Administración central en AV. Eva Perón 1401 Ciudad de Trelew, Chubut - para más información info@torca.com.ar - Venta y Asesoramiento Online 0810-999-1519 - horarios de atención de lunes a viernes de 8 a 17:30</p>
+        </footer>
+
+        <button class="float-btn" ><a href="#top">^</a></button> 
+
+    </body>
+</html>

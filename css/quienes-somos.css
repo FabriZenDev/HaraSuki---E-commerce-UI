@@ -1,0 +1,25 @@
+.about-us-content {
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.about-us-content h1 {
+    letter-spacing: 4px;
+    display: inline-block !important;
+    padding-bottom: 5px;
+    margin-bottom: 20px !important;
+    line-height: 1.4em;
+    /* background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+    background: linear-gradient(90deg, rgba(255, 149, 221, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.about-us-content p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+}
+

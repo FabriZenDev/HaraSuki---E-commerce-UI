@@ -1,0 +1,32 @@
+/* Estilos para el contenedor de las preguntas frecuentes */
+.faq-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.faq-container h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 20px !important;
+    line-height: 1.4em;
+    background: linear-gradient(90deg, rgba(255, 149, 221, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Estilos para cada pregunta */
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    color: #ff95b8;
+    font-size: 22px;
+}
+
+.faq-item p {
+    color: #333;
+    font-size: 16px;
+}

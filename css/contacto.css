@@ -1,0 +1,58 @@
+.contact-container {
+    display: flex;
+    align-items: center;
+    width: 900px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+/* Estilos para el contenedor de información de contacto */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Estilos para los elementos de contacto */
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-item i {
+    margin-right: 10px;
+    color: #ff95b8;
+    font-size: 18px;
+}
+
+.social-media p,
+.contact-item p {
+    margin: 0;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media a {
+    margin-bottom: 20px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.social-item i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #ff95b8;
+}
+
+.social-item:hover {
+    color: #ff95b8;
+}

@@ -1,0 +1,66 @@
+/* Estilos para el contenedor de categorías */
+.categories-page {
+    padding-top: 20px;
+}
+
+/* Estilos para los filtros */
+.filters {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.filters h3 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 20px !important;
+    line-height: 1.4em;
+    background: linear-gradient(90deg, rgba(255, 149, 221, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(90deg, rgba(255, 149, 221, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    border-image-slice: 1;
+}
+
+#priceRangeFilter,
+.color label:nth-child(1),
+.sizes label:nth-child(1) {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #ff2baa;
+}
+
+.sizes-label-content input[type=checkbox] {
+    width: 100px;
+}
+
+.form-control-range {
+    width: 100%;
+}
+
+/* Efecto al hacer hover en los inputs */
+.form-control:hover {
+    border-color: #ff95b8;
+}
+
+/* Efecto al hacer focus en los inputs */
+.form-control:focus {
+    outline: none;
+    border-color: #ff95b8;
+    box-shadow: 0 0 0 3px rgba(255, 149, 184, 0.2);
+}
+
+.btn-submit {
+    background-color: #ff95b8;
+    color: #fff;
+    border: none;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.btn-submit:hover {
+    color: #fff;
+    background-color: #d64d77;
+}

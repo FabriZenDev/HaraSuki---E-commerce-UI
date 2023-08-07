@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Harajuku Suki Style</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/b7339c0fd6.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/categorias.css">
+
+    <script defer src="/js/app.js"></script>
+    <script defer src="js/formNav.js"></script>
+
+</head>
+
+<body>
+    <header class="header-btm">
+        <div class="container-header">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <a href="#" class="nav-ask">¿Primera vez en HaraSuki?</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a href="index.html"><img src="assets/HSS-removebg.png" alt="Logo HSS"></a>
+                </div>
+                <div class="col-4 text-right">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter social-icon"></i></a>
+                        <a href="#"><i class="fab fa-instagram social-icon"></i></a>
+                        <a href="#"><i class="fab fa-tiktok social-icon"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp social-icon"></i></a>
+                        <a href="#"><i class="fab fa-line social-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="header-nav navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="index.html" id="category1Dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="category2Dropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categorias</a>
+                        <div class="dropdown-menu" aria-labelledby="category2Dropdown">
+                            <a class="dropdown-item" href="categorias.html">Blusas</a>
+                            <a class="dropdown-item" href="#">Tops</a>
+                            <a class="dropdown-item" href="#">Remeras</a>
+                            <a class="dropdown-item" href="#">Faldas</a>
+                            <a class="dropdown-item" href="#">Vestidos</a>
+                            <a class="dropdown-item" href="#">Camperas</a>
+                            <a class="dropdown-item" href="#">Buzos</a>
+                            <a class="dropdown-item" href="#">Zapatillas</a>
+                            <a class="dropdown-item" href="#">Botas</a>
+                            <a class="dropdown-item" href="#">Sets</a>
+                            <a class="dropdown-item" href="#">Cosmeticos - Belleza</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="club-harasuki.html" id="category3Dropdown" role="button" 
+                            aria-haspopup="true" aria-expanded="false">Club HaraSuki
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="locales.html" id="category4Dropdown" role="button" 
+                            aria-haspopup="true" aria-expanded="false">Locales
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="faqs.html" id="category5Dropdown" role="button" 
+                            aria-haspopup="true" aria-expanded="false">Info y talles
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="quienes-somos.html" id="category5Dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">Quienes Somos
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="contacto.html" id="category5Dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">Contacto
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link search-link">
+                            <div class="search-form">
+                                <input id="search-input" type="text" placeholder="Busca tu prenda favorita">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item" onmouseover="showCart()" onmouseout="hideCart()">
+
+                        <a class="nav-link cart-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+
+                        <div class="cart-content" id="cartContent">
+                            <div class="favorites-content-item">
+                                <img src="stock/17.jpg" alt="favorite-item">
+                                <div class="favorites-content-item-info">
+                                    <h2>Blusa Viento Dulce</h2>
+                                    <p>$23.000</p>
+                                    <a href="carrito.html"><button>Comprar</button></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item" onmouseover="showFavorites()" onmouseout="hideFavorites()">
+                        <a class="nav-link favorites-link" href="#"><i class="fas fa-heart"></i></a>
+                        <div class="favorites-content" id="favoritesContent">
+                            <div class="favorites-content-item">
+                                <img src="stock/1.jpg" alt="favorite-item">
+                                <div class="favorites-content-item-info">
+                                    <h2>Conjunto Elegancia Estival</h2>
+                                    <p>$42.000</p>
+                                    <button>Eliminar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link login-link" href="login.html"><i class="fas fa-user"></i>Mi cuenta</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+
+        <!-- Contenido principal -->
+
+        <div class="container-body categories-page">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="filters">
+
+                        <!-- Filtros -->
+                        <h3>Filtros</h3>
+
+                        <div class="form-group sizes">
+                            <label for="talleFilter">Talles</label>
+                            <div class="form-check">
+                                <input type="checkbox" id="xsFilter" class="form-check-input">
+                                <label class="form-check-label" for="xsFilter">XS</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="sFilter" class="form-check-input">
+                                <label class="form-check-label" for="sFilter">S</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="mFilter" class="form-check-input">
+                                <label class="form-check-label" for="mFilter">M</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="lFilter" class="form-check-input">
+                                <label class="form-check-label" for="lFilter">L</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group color">
+                            <label for="colorFilter">Color</label>
+                            <div class="form-check">
+                                <input type="checkbox" id="rojoFilter" class="form-check-input">
+                                <label class="form-check-label" for="rojoFilter">Rojo</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="azulFilter" class="form-check-input">
+                                <label class="form-check-label" for="azulFilter">Azul</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="verdeFilter" class="form-check-input">
+                                <label class="form-check-label" for="verdeFilter">Verde</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="amarilloFilter" class="form-check-input">
+                                <label class="form-check-label" for="amarilloFilter">Amarillo</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="rosaFilter" class="form-check-input">
+                                <label class="form-check-label" for="rosaFilter">Rosa</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group color">
+                            <label for="colorFilter">Temporada</label>
+                            <div class="form-check">
+                                <input type="checkbox" id="rojoFilter" class="form-check-input">
+                                <label class="form-check-label" for="rojoFilter">Verano 2023</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="azulFilter" class="form-check-input">
+                                <label class="form-check-label" for="azulFilter">Primavera 2023</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="verdeFilter" class="form-check-input">
+                                <label class="form-check-label" for="verdeFilter">Invierno 2022</label>
+                            </div>
+                        </div>
+
+                        <!-- Filtro de rango de precios como formulario -->
+                        <div class="form-group form-range-price">
+                            <label for="priceRangeFilter" id="priceRangeFilter">Rango de Precio</label>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="desdeInput">Desde</label>
+                                    <input type="number" id="desdeInput" class="form-control" placeholder="$5000">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="hastaInput">Hasta</label>
+                                    <input type="number" id="hastaInput" class="form-control" placeholder="$100000" min="0">
+                                </div>
+                            </div>
+                            <button class="btn btn-submit">Filtrar</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Items -->
+                <div class="section-show-items" style="width: 75%; justify-content:space-between">
+
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="product-card">
+                                <img class="product-image" src="/stock/17.3.jpg" alt="Product Image">
+                                <h3 class="product-title">Producto 1</h3>
+                                <p class="product-description">Descripción del producto 1</p>
+                                <p class="product-price">Precio anterior: <span
+                                        class="product-discount-price">$24.99</span></p>
+                                <p class="product-offer-price">Precio de oferta: $19.99</p>
+                                <a href="compra.html"><button class="product-button">Ver más</button></a>
+                                <i class="fas fa-tag discount-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="product-card">
+                                <img class="product-image" src="/stock/3.jpg" alt="Product Image">
+                                <h3 class="product-title">Producto 1</h3>
+                                <p class="product-description">Descripción del producto 1</p>
+                                <p class="product-price">Precio anterior: <span
+                                        class="product-discount-price">$24.99</span></p>
+                                <p class="product-offer-price">Precio de oferta: $19.99</p>
+                                <button class="product-button">Ver más</button>
+                                <i class="fas fa-tag discount-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="product-card">
+                                <img class="product-image" src="/stock/12.jpg" alt="Product Image">
+                                <h3 class="product-title">Producto 1</h3>
+                                <p class="product-description">Descripción del producto 1</p>
+                                <p class="product-price">Precio anterior: <span
+                                        class="product-discount-price">$24.99</span></p>
+                                <p class="product-offer-price">Precio de oferta: $19.99</p>
+                                <button class="product-button">Ver más</button>
+                                <i class="fas fa-tag discount-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="product-card">
+                                <img class="product-image" src="/stock/14.jpg" alt="Product Image">
+                                <h3 class="product-title">Producto 1</h3>
+                                <p class="product-description">Descripción del producto 1</p>
+                                <p class="product-price">Precio anterior: <span
+                                        class="product-discount-price">$24.99</span></p>
+                                <p class="product-offer-price">Precio de oferta: $19.99</p>
+                                <button class="product-button">Ver más</button>
+                                <i class="fas fa-tag discount-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Display -->
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </body>
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-header">
+                <div class="footer-logo">
+                    <a href="index.html">HARAJUKU SUKI STYLE</a>
+                </div>
+                <div class="footer-social-media">
+                    <i class="fab fa-twitter" style="color: #fff;"></i>
+                    <i class="fab fa-instagram" style="color: #fff;"></i>
+                    <i class="fab fa-tiktok" style="color: #fff;"></i>
+                    <i class="fab fa-whatsapp" style="color: #fff;"></i>
+                    <i class="fab fa-line" style="color: #fff;"></i>
+                </div>
+            </div>
+
+            <div class="footer-container-nav">
+                <div class="footer-nav">
+                    <h4>Menú</h4>
+                    <ul>
+                        <li><a href="#">Todos los articulos</a></li>
+                        <li><a href="#">Nuevos arrivos</a></li>
+                        <li><a href="#">Coordinación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>Categorías</h4>
+                    <ul>
+                        <li><a href="#">Remeras</a></li>
+                        <li><a href="#">Tops</a></li>
+                        <li><a href="#">Faldas</a></li>
+                        <li><a href="#">Vestidos</a></li>
+                        <li><a href="#">Camperas</a></li>
+                        <li><a href="#">Zapatillas</a></li>
+                        <li><a href="#">Botas</a></li>
+                        <li><a href="#">Sets</a></li>
+                        <li><a href="#">Cosmeticos - Belleza</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>Precios</h4>
+                    <ul>
+                        <li><a href="#">$6000 - $8000</a></li>
+                        <li><a href="#">$8000 - $10000</a></li>
+                        <li><a href="#">$10000 - $15000</a></li>
+                        <li><a href="#">$15000 - $20000</a></li>
+                        <li><a href="#">$20000 - $30000</a></li>
+                        <li><a href="#">+ $30000</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>Informacion</h4>
+                    <ul>
+                        <li><a href="#">Quienes Somos</a></li>
+                        <li><a href="#">Local</a></li>
+                        <li><a href="#">Terminos y condiciones</a></li>
+                        <li><a href="#">Medios de pago</a></li>
+                        <li><a href="#">Politicas de cambio</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>Coordinación</h4>
+                    <ul>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Ubicación</a></li>
+                        <li><a href="#">Sucursales</a></li>
+                        <li><a href="#">Horarios</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Harajuku Suki Style. Todos los derechos reservados.</p>
+            </div>
+
+            <!-- Fin div container -->
+        </div>
+    </footer>
+
+</html>

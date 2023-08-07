@@ -1,0 +1,100 @@
+container {
+    max-width: 500px;
+}
+
+.login-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff95b8;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.register-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    font-weight: 500;
+}
+
+.forgot-password {
+    color: #ff95b8;
+    text-decoration: none;
+}
+
+.btn-login {
+    background-color: #ff95b8;
+    border: none;
+    width: 100%;
+}
+
+.btn-login:hover {
+    background-color: #d64d77;
+}
+
+.or-divider {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+    margin: 15px 0;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social-icon-login {
+    color: #ffffff;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.gmail {
+    background-color: #db4a39;
+}
+
+.instagram {
+    background: linear-gradient(-120deg, rgba(64, 93, 230, 1) 15%, rgba(131, 58, 180, 1) 40%, rgba(253, 29, 29, 1) 100%);
+}
+
+.register-link {
+    color: #ff95b8;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
